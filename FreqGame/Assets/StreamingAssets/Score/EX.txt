@@ -1,6 +1,6 @@
-,7521
-,6968
 util,5000
 noname,500
 noname,300
+noname,200
+noname,100
 

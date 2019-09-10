@@ -134,7 +134,7 @@ public class StageSelect : MonoBehaviour
         explainObj.transform.position += (Vector3.up + Vector3.right * 0.5f) * Mathf.Sin(Time.time * 420 * Mathf.Deg2Rad) * 0.02f;
         message.transform.position += (Vector3.up) * Mathf.Sin(Time.time * 330 * Mathf.Deg2Rad) * 0.01f;
 
-        if (Input.GetKeyDown(KeyCode.Z) && inputtable&& stagePoint[select].CanGo)
+        if ((Input.GetKeyDown(KeyCode.Z) || (Input.GetKeyDown(KeyCode.Return))) && inputtable&& stagePoint[select].CanGo)
         {
             audioSource.PlayOneShot(se[2]);
             isAfterSelection = true;

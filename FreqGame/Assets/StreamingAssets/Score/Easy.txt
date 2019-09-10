@@ -1,6 +1,6 @@
-,11267
-,11032
-,10802
-,6907
 yoko,1000
+noname,500
+noname,300
+noname,200
+noname,100
 

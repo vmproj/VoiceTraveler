@@ -1,5 +1,0 @@
--gram cage
--C hmm_ptm.jconf
--input mic
--progout
--proginterval 300

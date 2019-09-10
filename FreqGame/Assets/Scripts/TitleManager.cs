@@ -199,7 +199,7 @@ public class TitleManager : MonoBehaviour
                 StartCoroutine("MoveCursor", cursorPos_menu[(int)selectMenu].position);
             }
             AnimateMenu();
-            if (Input.GetKeyDown(KeyCode.Z))
+            if ((Input.GetKeyDown(KeyCode.Z) || (Input.GetKeyDown(KeyCode.Return))))
             {
                 switch (selectMenu.Value)
                 {
@@ -263,7 +263,7 @@ public class TitleManager : MonoBehaviour
                 StopCoroutine("MoveCursor");
                 StartCoroutine("MoveCursor", cursorPos_yesNo[(bool)selectYesNo ? 0 : 1].position);
             }
-            if (Input.GetKeyDown(KeyCode.Z) && !afterSelect)
+            if ((Input.GetKeyDown(KeyCode.Z) || (Input.GetKeyDown(KeyCode.Return))) && !afterSelect)
             {
                 audioSource.PlayOneShot(se[1]);
                 if ((bool)selectYesNo) StartCoroutine(SceneChange.ChangeScene("Frequency"));

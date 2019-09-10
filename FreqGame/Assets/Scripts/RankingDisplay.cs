@@ -128,7 +128,7 @@ public class RankingDisplay : RankingBase
             totalScore += subPerFrameScore;
             preScoreText.text = preScore.ToString();
             totalScoreText.text = totalScore.ToString();
-            yield return null;
+            yield return new WaitForSeconds(0.01f);
         }
         totalScore += preScore;
         preScore = 0;
@@ -146,7 +146,7 @@ public class RankingDisplay : RankingBase
             timeText.text = remainingTime.ToString();
             totalScoreText.text = totalScore.ToString();
 
-            yield return null;
+            yield return new WaitForSeconds(0.01f);
         }
         countingIsOver = true;
         totalScore += remainingTime;
